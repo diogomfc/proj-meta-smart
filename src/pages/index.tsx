@@ -6,6 +6,14 @@ const Title = styled.h1`
   //color: ${({ theme }) => theme.colors.primary};
 `;
 
+import Layout from "../components/layout";
+
 export default function Home() {
-  return <Title>Setup - Next - styledComponent - typescript</Title>;
+  return (
+    <>
+      <Layout color="#5856">
+        <Title>Home</Title>
+      </Layout>
+    </>
+  );
 }
