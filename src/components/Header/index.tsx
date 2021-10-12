@@ -1,11 +1,11 @@
+import ContentHeader from "../NavbarSmart/ContentHeader";
+
 import { Container } from "./styles";
 
-export default function Header() {
+export default function Header1() {
   return (
     <Container>
-      <img src="/img/Logo.svg" alt="Meta Smart" />
-      <p>Menu1 - Menu2 - Menu3 - Menu4</p>
-      <span>PERFIL DA CONTA</span>
+      <ContentHeader />
     </Container>
   );
 }

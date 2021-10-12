@@ -1,4 +1,4 @@
-import Header from "../Header";
+import ContentHeader from "../../NavbarSmart/ContentHeader";
 import { Container } from "./styles";
 
 type Itype = {
@@ -9,7 +9,7 @@ type Itype = {
 export default function Layout(props: Itype) {
   return (
     <>
-      <Header />
+      <ContentHeader />
       <Container color={props.color}>{props.children}</Container>
     </>
   );

@@ -1,19 +1,50 @@
+import Layouts from "../components/Layouts";
+
 import styled from "styled-components";
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${(props) => props.theme.colors.textoPrimary};
-  //color: ${({ theme }) => theme.colors.primary};
+const Titulo = styled.div`
+  //background: red;
+  width: 100%;
+  height: 900px;
 `;
-
-import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <>
-      <Layout color="#5856">
-        <Title>Home</Title>
-      </Layout>
-    </>
+    <Layouts>
+      <Titulo>
+        <h1>Diogo</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+        <h1>HOME</h1>
+      </Titulo>
+    </Layouts>
   );
 }
