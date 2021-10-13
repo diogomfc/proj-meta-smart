@@ -9,14 +9,14 @@ export const Estrategias = () => (
      <ul className="primary">
       
       <li>
-         <img src="/images/iconsEstrategia/IconCadastroMeta.svg" />
+         <img src="/icons/iconsSubMenu/iconsEstrategia/IconCadastroMeta.svg" />
             <Link href="#">
              <div>
                 <div>
                   <h3>Cadastro personalizado da meta</h3>
                   <span className="pending-tag">EM BREVE</span>
                 </div>
-                <p>defina estratégias com base nos últimos resultados</p>
+                <p>defina estratégias com base nos resultados</p>
               </div>
             </Link>
       </li>

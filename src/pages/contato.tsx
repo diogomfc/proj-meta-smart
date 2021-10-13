@@ -8,7 +8,7 @@ const Titulo = styled.div`
   height: 900px;
 `;
 
-export default function Home() {
+export default function Contato() {
   return (
     <Layouts>
       <Titulo>

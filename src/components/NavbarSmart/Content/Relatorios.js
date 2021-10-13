@@ -8,7 +8,7 @@ export const Relatorios = () => (
   <RelatoriosContainer>
     <ul className="primary">
       <li>
-         <img src="/images/iconsRelatorios/IconRelatorioDia.svg" />
+         <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDia.svg" />
             <Link href="#">
              <div>
                 <div>
@@ -20,8 +20,7 @@ export const Relatorios = () => (
             </Link>
       </li>
       <li>
-        {/* <span className="billing" /> */}
-        <img src="/images/iconsRelatorios/IconRelatorioMes.svg" />
+         <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioMes.svg" />
           <Link href="#">
               <div>
                 <div>
@@ -33,7 +32,7 @@ export const Relatorios = () => (
           </Link>
       </li>
       <li>
-      <img src="/images/iconsRelatorios/IconRelatorioDetalado.svg" />
+      <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDetalado.svg" />
         <Link href="#">
               <div>
                 <div>

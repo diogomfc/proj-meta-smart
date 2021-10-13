@@ -10,27 +10,38 @@ export const SmartApps = () => (
   <SmartAppsContainer>
     <ul className="primary">
       <li>
-         <img src="/icons/iconsSubMenu/iconsSmartApps/IconAudioteca.svg" />
+         <img src="/icons/iconsSubMenu/iconsSmartApps/IconBasedeConhecimento.svg" />
             <Link href="/contato">
              <div>
+                <div>
+                  <h3>Base de conhecimento</h3>
+                  <span className="pending-tag">EM BREVE</span>
+                </div>
+                <p>Busca inteligente de processos e procedimentos </p>
+              </div>
+            </Link>
+      </li>
+      <li>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/iconAudioteca.svg" />
+          <Link href="/">
+              <div>
                 <div>
                   <h3>Audioteca</h3>
                   <span className="pending-tag">EM BREVE</span>
                 </div>
                 <p>repositório com ligações para reforçar seu pit</p>
               </div>
-            </Link>
+          </Link>
       </li>
       <li>
-        {/* <span className="billing" /> */}
-        <img src="/icons/iconsSubMenu/iconsSmartApps/IconBuscaDetran.svg" />
-          <Link href="/">
+      <img src="/icons/iconsSubMenu/iconsSmartApps/IconGirodaSabedoria.svg" />
+        <Link href="#">
               <div>
                 <div>
-                  <h3>Busca sites do DETRAN</h3>
+                  <h3>Giro da sabedoria</h3>
                   <span className="pending-tag">EM BREVE</span>
                 </div>
-                <p>localiza o site do DETRAN por estado</p>
+                <p> produtividade, originação, upsell e atingimento.</p>
               </div>
           </Link>
       </li>
@@ -47,15 +58,15 @@ export const SmartApps = () => (
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconGirodaSabedoria.svg" />
-        <Link href="#">
-              <div>
+      <img src="/icons/iconsSubMenu/iconsSmartApps/IconScorecard.svg" />
+      <Link href="#">
+            <div>
                 <div>
-                  <h3>GIRO DA SABEDORIA</h3>
+                  <h3>Scorecard</h3>
                   <span className="pending-tag">EM BREVE</span>
                 </div>
-                <p> produtividade, originação, upsell e atingimento.</p>
-              </div>
+                <p> repositório com seus feedbacks de ligações </p>
+            </div>
           </Link>
       </li>
       <li>
@@ -67,18 +78,6 @@ export const SmartApps = () => (
                   <span className="pending-tag">EM BREVE</span>
                 </div>
                 <p> dicas para evitar as pendências indesejadas  </p>
-              </div>
-          </Link>
-      </li>
-      <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconLembrame.svg" />
-        <Link href="#">
-              <div>
-                <div>
-                  <h3>Lembra-me</h3>
-                  <span className="pending-tag">EM BREVE</span>
-                </div>
-                <p> nunca mais esqueça daquele compromisso com o cliente</p>
               </div>
           </Link>
       </li>
@@ -95,30 +94,6 @@ export const SmartApps = () => (
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconLocaldoChassi.svg" />
-        <Link href="#">
-              <div>
-                <div>
-                  <h3>Local do Chassi</h3>
-                  <span className="pending-tag">EM BREVE</span>
-                </div>
-                <p> Identificação da localização do número do chassi </p>
-              </div>
-          </Link>
-      </li>
-      <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconMaterialApoio.svg" />
-        <Link href="#">
-              <div>
-                <div>
-                  <h3>Material de apoio</h3>
-                  <span className="pending-tag">EM BREVE</span>
-                </div>
-                <p> scripts de ligação, Hashtags e nossos processos</p>
-              </div>
-          </Link>
-      </li>
-      <li>
       <img src="/icons/iconsSubMenu/iconsSmartApps/IconMatrizArgumetacaoes.svg" />
         <Link href="#">
               <div>
@@ -131,19 +106,18 @@ export const SmartApps = () => (
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconScorecard.svg" />
-      <Link href="#">
-            <div>
+      <img src="/icons/iconsSubMenu/iconsSmartApps/iconTopPerformance.svg" />
+        <Link href="#">
+              <div>
                 <div>
-                  <h3>Scorecard</h3>
+                  <h3>Top Performance</h3>
                   <span className="pending-tag">EM BREVE</span>
                 </div>
-                <p> repositório com seus feedbacks de ligações </p>
-            </div>
+                <p>consultores que estão mandando super bem</p>
+              </div>
           </Link>
       </li>
     </ul>
-
     <ul className="secondary">
       <li>
         <div className="container-feedback">

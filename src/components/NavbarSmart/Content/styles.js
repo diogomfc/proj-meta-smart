@@ -3,27 +3,27 @@ import styled, { css } from 'styled-components';
 const h3 = css`
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #5A5A5A;
+  color: ${props => props.theme.colors.textoPrimary};
 `;
 
 const p = css`
-  //color: #000;
-  color: ${props => props.theme.colors.darkTerciary};
+  color: ${props => props.theme.colors.textoPrimary};
   font-weight: normal;
+  text-transform: lowercase;
 `;
 
 const hover = css`
   cursor: pointer;
-  transition: opacity 0.1s ease-in;
-  &:hover {
-    opacity: 0.7;
-  }
+  //transition: opacity 0.1s ease-in;
+  transition: opacity 0.2s;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
 `;
 
 //SmartApps
 export const SmartAppsContainer = styled.div`
- //padding: 35px 35px 0 35px;
  padding-right: 35px;
  padding-left: 35px;
  padding-top: 35px;
@@ -49,11 +49,12 @@ export const SmartAppsContainer = styled.div`
   .primary {
     
     >li {
+      ${hover}
       display: flex;
       align-items: center;
+      opacity: 0.7;
     
       div {
-        ${hover}
         margin-left: 10px;
 
         h3 {
@@ -166,22 +167,23 @@ export const SmartAppsContainer = styled.div`
   }
 `;
 
-
-
-
 //Link Metricas
 export const MetricasContainer = styled.div`
- padding: 35px 35px 0 35px;
+ padding-right: 35px;
+ padding-left: 35px;
+ padding-top: 35px;
+
  white-space: nowrap;
 
   .primary {
     
     li {
+      ${hover}
       display: flex;
       align-items: center;
+      opacity: 0.7;
     
       div {
-        ${hover}
         margin-left: 10px;
 
         h3 {
@@ -235,11 +237,12 @@ export const MetricasContainer = styled.div`
   .secondary {
     display: flex;
     justify-content: center;
-    
     padding-top: 28px;
+    padding-bottom : 18px;
     
     li {
       ${hover}
+      opacity: 0.7;
       display: flex;
       align-items: center;
 
@@ -291,17 +294,21 @@ export const MetricasContainer = styled.div`
 
 //Link Relatórios
 export const RelatoriosContainer = styled.div`
-padding: 35px 35px 0 35px;
+padding-right: 35px;
+ padding-left: 35px;
+ padding-top: 35px;
+
  white-space: nowrap;
-   
+
   .primary {
     
     li {
+      ${hover}
       display: flex;
       align-items: center;
+      opacity: 0.7;
     
       div {
-        ${hover}
         margin-left: 10px;
 
         h3 {
@@ -355,11 +362,12 @@ padding: 35px 35px 0 35px;
   .secondary {
     display: flex;
     justify-content: center;
-    
     padding-top: 28px;
+    padding-bottom : 18px;
     
     li {
       ${hover}
+      opacity: 0.7;
       display: flex;
       align-items: center;
 
@@ -389,7 +397,6 @@ padding: 35px 35px 0 35px;
           display: flex;
           justify-content: center;
           align-items: center;
-          //background-color: blue;
           width: 35px;
           height: 35px;
           margin-left: 5px;
@@ -405,23 +412,26 @@ padding: 35px 35px 0 35px;
 
     }
 
-
   }
 `;
 
 //Link Estrategias
 export const EstrategiasContainer = styled.div`
- padding: 35px 35px 0 35px;
+ padding-right: 35px;
+ padding-left: 35px;
+ padding-top: 35px;
+
  white-space: nowrap;
-   
+
   .primary {
     
     li {
+      ${hover}
       display: flex;
       align-items: center;
+      opacity: 0.7;
     
       div {
-        ${hover}
         margin-left: 10px;
 
         h3 {
@@ -431,8 +441,7 @@ export const EstrategiasContainer = styled.div`
           white-space:normal;
           ${p}
           margin-top: 5px;
-          width: 365px;
-    
+          width: 380px;
         }
         div{
           display: flex;
@@ -474,14 +483,14 @@ export const EstrategiasContainer = styled.div`
   }
 
   .secondary {
-
     display: flex;
     justify-content: center;
-    
     padding-top: 28px;
+    padding-bottom : 18px;
     
     li {
       ${hover}
+      opacity: 0.7;
       display: flex;
       align-items: center;
 
@@ -503,7 +512,6 @@ export const EstrategiasContainer = styled.div`
 
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-
         border-radius: 6px;
         
         margin-bottom: 25px;
@@ -512,7 +520,6 @@ export const EstrategiasContainer = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-    
           width: 35px;
           height: 35px;
           margin-left: 5px;
@@ -523,12 +530,10 @@ export const EstrategiasContainer = styled.div`
         ${p}
         font-size: 12px;
         margin-left: 14px;
-
       }
       }
 
     }
-
 
   }
 `;

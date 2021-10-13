@@ -2,49 +2,66 @@ import Layouts from "../components/Layouts";
 
 import styled from "styled-components";
 
-const Titulo = styled.div`
-  //background: red;
-  width: 100%;
-  height: 900px;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding-bottom: 90px;
+
+  height: 100vw;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 1.5rem;
+
+    h1 {
+      color: #1f2d27;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+
+  > p {
+    color: #1f2d27;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 1.5rem;
+  }
+
+  > span {
+    color: #1f2d27;
+    font-size: 16px;
+  }
 `;
 
-export default function Home() {
+export default function Index() {
   return (
     <Layouts>
-      <Titulo>
-        <h1>Diogo</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
+      <Container>
+        <img src="/img/ImgAlertaResult.svg" />
+        <p>Nenhuma resultado por aqui...</p>
+        <span>
+          Criamos um ambiente dedicado para que você possa evoluir de forma
+          <br />
+          contínua e se manter atualizado com nossos processos e <br />{" "}
+          procedimentos.
+        </span>
+        <div>
+          <h1>Navegue pelo menu superior e embarque nesse foguete.</h1>
+          <img src="/img/iconRocket.svg" />
+        </div>
 
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-      </Titulo>
+        <span>
+          Lembre-se de compartilhar seu conhecimento, contamos com você.
+        </span>
+      </Container>
     </Layouts>
   );
 }

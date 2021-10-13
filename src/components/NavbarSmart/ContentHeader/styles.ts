@@ -5,16 +5,17 @@ export const DropdownStyles = styled.div`
     height: 60px;
     padding: 0px 5px;
     outline: 0;
-    color: #1F2D27;
+    color: ${props => props.theme.colors.textoPrimary};
     font-size: 18px;
     border: none;
     cursor: pointer;
+    opacity: 0.7;
 
     transition: opacity 0.2s;
 
     &:hover,
     &:focus {
-      opacity: 0.55;
+      opacity: 1;
     }
   }
 
@@ -63,11 +64,8 @@ export const DropdownStyles = styled.div`
 `;
 
 export const Container = styled.div`
-
 background: ${props => props.theme.colors.primary};
-//box-shadow: 3px 3px #EFEFEF, 1em 0 0.4em olive;
 box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 30px;
-//border-bottom: 1px solid #EFEFEF;
 
 height: 5rem;
 width: 100%;
@@ -86,7 +84,6 @@ padding-left: 50px;
 export const MenuDrop = styled.nav`
 
  > ul {
-    //background: #393C43;
     list-style-type: none;
     display: flex;
   
@@ -114,8 +111,10 @@ export const Perfil = styled.div`
     display: flex;
     font-size:1rem;
     font-weight: bold;
+    color: ${props => props.theme.colors.textoPrimary};
+
       >p{
-      color: blue;
+      color: ${props => props.theme.colors.bluePrimary};
       font-size: 0.75rem;
       padding-left: 1rem;
       display: flex;
@@ -126,6 +125,7 @@ export const Perfil = styled.div`
     >span{
     font-size:1rem;
     font-weight:lighter;
+    color: ${props => props.theme.colors.textoPrimary};
     }
  }
 

@@ -10,7 +10,7 @@ export const Metricas = () => (
   <MetricasContainer>
     <ul className="primary">
       <li>
-         <img src="/images/IconHistoricoDiario.svg" />
+         <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDiario.svg" />
             <Link href="/Users/metricasHistoricoDia">
              <div>
                 <div>
@@ -23,7 +23,7 @@ export const Metricas = () => (
       </li>
       <li>
         {/* <span className="billing" /> */}
-        <img src="/images/IconHistoricoMensal.svg" />
+        <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoMensal.svg" />
           <Link href="/Users/metricasMes">
               <div>
                 <div>
@@ -35,7 +35,7 @@ export const Metricas = () => (
           </Link>
       </li>
       <li>
-      <img src="/images/IconHistoricoDetalhado.svg" />
+      <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDetalhado.svg" />
         <Link href="#">
               <div>
                 <div>
