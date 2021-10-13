@@ -22,7 +22,7 @@ export const SmartApps = () => (
             </Link>
       </li>
       <li>
-        <img src="/icons/iconsSubMenu/iconsSmartApps/iconAudioteca.svg" />
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconAudioteca.svg" />
           <Link href="/">
               <div>
                 <div>
@@ -106,7 +106,7 @@ export const SmartApps = () => (
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/iconTopPerformance.svg" />
+      <img src="/icons/iconsSubMenu/iconsSmartApps/IconTopPerformance.svg" />
         <Link href="#">
               <div>
                 <div>
