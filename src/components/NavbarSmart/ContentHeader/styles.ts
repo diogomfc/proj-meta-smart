@@ -9,7 +9,7 @@ export const DropdownStyles = styled.div`
     font-size: 18px;
     border: none;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.8;
 
     transition: opacity 0.2s;
 
@@ -53,14 +53,11 @@ export const DropdownStyles = styled.div`
 
     background: #F6F9FC;
     border-radius: 10px;
-    
   }
 
   .dropdown-section {
     position: absolute;
   }
-
-  
 `;
 
 export const Container = styled.div`
@@ -82,7 +79,6 @@ padding-left: 50px;
 `;
 
 export const MenuDrop = styled.nav`
-
  > ul {
     list-style-type: none;
     display: flex;
@@ -92,7 +88,7 @@ export const MenuDrop = styled.nav`
     justify-content: left;
    
     gap: 10px;
-    
+
   }
 
 `

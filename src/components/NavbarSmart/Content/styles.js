@@ -45,15 +45,14 @@ export const SmartAppsContainer = styled.div`
     ::-webkit-scrollbar-track {
         background-color: #FFFFFF;
     }
- 
+
   .primary {
-    
     >li {
       ${hover}
       display: flex;
       align-items: center;
-      opacity: 0.7;
-    
+      opacity: 0.8;
+
       div {
         margin-left: 10px;
 
@@ -106,14 +105,14 @@ export const SmartAppsContainer = styled.div`
   }
 
   .secondary {
-    //margin-top: 80px;
     display: flex;
     justify-content: center;
-    
     padding-top: 28px;
+    padding-bottom : 18px;
     
     li {
       ${hover}
+      opacity: 0.7;
       display: flex;
       align-items: center;
 
@@ -130,23 +129,19 @@ export const SmartAppsContainer = styled.div`
         display: flex;
         align-items: center;
 
-        width: 100%;
+        width: 90%;
         height: 80px;
 
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-        //border: thin solid #696A6E;
         border-radius: 6px;
         
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         
         div{
           display: flex;
           justify-content: center;
           align-items: center;
-          //background-color: blue;
           width: 35px;
           height: 35px;
           margin-left: 5px;
@@ -157,12 +152,9 @@ export const SmartAppsContainer = styled.div`
         ${p}
         font-size: 12px;
         margin-left: 14px;
-        //margin-right: 80px;
       }
       }
-
     }
-
 
   }
 `;
@@ -181,7 +173,7 @@ export const MetricasContainer = styled.div`
       ${hover}
       display: flex;
       align-items: center;
-      opacity: 0.7;
+      opacity: 0.8;
     
       div {
         margin-left: 10px;
@@ -306,7 +298,7 @@ padding-right: 35px;
       ${hover}
       display: flex;
       align-items: center;
-      opacity: 0.7;
+      opacity: 0.8;
     
       div {
         margin-left: 10px;
@@ -429,7 +421,7 @@ export const EstrategiasContainer = styled.div`
       ${hover}
       display: flex;
       align-items: center;
-      opacity: 0.7;
+      opacity: 0.8;
     
       div {
         margin-left: 10px;
