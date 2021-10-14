@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   html{ 
     min-height: 100%;
     background-image: linear-gradient(${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
+    font-size: 62.5% // 10px
   }
   *, button, input {
     border: 0;
@@ -29,14 +30,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   ul {
     list-style: none;
-  }
-
-  h1{
-    font-size: 2rem;
-  }
-
-  h2{
-      font-size: 1.5rem;
   }
 
   button{

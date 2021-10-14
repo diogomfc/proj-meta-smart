@@ -7,10 +7,10 @@ import { EstrategiasContainer } from './styles';
 export const Estrategias = () => (
   <EstrategiasContainer>
      <ul className="primary">
-      
       <li>
-         <img src="/icons/iconsSubMenu/iconsEstrategia/IconCadastroMeta.svg" />
             <Link href="#">
+            <a>
+            <img src="/icons/iconsSubMenu/iconsEstrategia/IconCadastroMeta.svg" />
              <div>
                 <div>
                   <h3>Cadastro personalizado da meta</h3>
@@ -18,6 +18,7 @@ export const Estrategias = () => (
                 </div>
                 <p>defina estratégias com base nos resultados</p>
               </div>
+              </a>
             </Link>
       </li>
     </ul>

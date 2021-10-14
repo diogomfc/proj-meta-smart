@@ -8,8 +8,10 @@ export const Relatorios = () => (
   <RelatoriosContainer>
     <ul className="primary">
       <li>
-         <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDia.svg" />
+       
             <Link href="#">
+            <a>
+            <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDia.svg" />
              <div>
                 <div>
                   <h3>Relatório de produtividade diária</h3>
@@ -17,11 +19,14 @@ export const Relatorios = () => (
                 </div>
                 <p>pdf ou xls da sua produtividade diária</p>
               </div>
+              </a>
             </Link>
       </li>
       <li>
-         <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioMes.svg" />
+
           <Link href="#">
+          <a>
+          <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioMes.svg" />
               <div>
                 <div>
                   <h3>Relatório de produtividade Mensal</h3>
@@ -29,11 +34,14 @@ export const Relatorios = () => (
                 </div>
                 <p>pdf ou xls da sua produtividade mensal</p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDetalado.svg" />
+  
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsRelatorios/IconRelatorioDetalado.svg" />
               <div>
                 <div>
                   <h3>Relatório detalhado</h3>
@@ -41,6 +49,7 @@ export const Relatorios = () => (
                 </div>
                 <p>pdf ou xls mensal da sua meta detalhada</p>
               </div>
+              </a>
           </Link>
       </li>
     </ul>

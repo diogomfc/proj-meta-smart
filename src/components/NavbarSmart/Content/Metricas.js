@@ -10,8 +10,9 @@ export const Metricas = () => (
   <MetricasContainer>
     <ul className="primary">
       <li>
-         <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDiario.svg" />
-            <Link href="/Users/metricasHistoricoDia">
+          <Link href="/Users/metricasHistoricoDia">
+            <a>
+            <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDiario.svg" />
              <div>
                 <div>
                   <h3>Histórico Diário</h3>
@@ -19,24 +20,27 @@ export const Metricas = () => (
                 </div>
                 <p>puxadas, carterizadas e originação </p>
               </div>
-            </Link>
+              </a>
+          </Link>
       </li>
       <li>
-        {/* <span className="billing" /> */}
-        <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoMensal.svg" />
           <Link href="/Users/metricasMes">
-              <div>
+            <a>
+            <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoMensal.svg" />
+            <div>
                 <div>
                   <h3>Histórico Mensal</h3>
                   <span className="new-tag">🚀 no ar</span>
                 </div>
                 <p>puxadas, carterizadas e originação </p>
               </div>
+            </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDetalhado.svg" />
         <Link href="#">
+          <a>
+          <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDetalhado.svg" />
               <div>
                 <div>
                   <h3>Histórico Detalhado</h3>
@@ -44,6 +48,7 @@ export const Metricas = () => (
                 </div>
                 <p> produtividade, originação, upsell e atingimento.</p>
               </div>
+              </a>
           </Link>
       </li>
     </ul>

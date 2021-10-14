@@ -10,8 +10,9 @@ export const SmartApps = () => (
   <SmartAppsContainer>
     <ul className="primary">
       <li>
-         <img src="/icons/iconsSubMenu/iconsSmartApps/IconBasedeConhecimento.svg" />
             <Link href="/contato">
+              <a>
+              <img src="/icons/iconsSubMenu/iconsSmartApps/IconBasedeConhecimento.svg" />
              <div>
                 <div>
                   <h3>Base de conhecimento</h3>
@@ -19,11 +20,13 @@ export const SmartApps = () => (
                 </div>
                 <p>Busca inteligente de processos e procedimentos </p>
               </div>
+              </a>
             </Link>
       </li>
       <li>
-        <img src="/icons/iconsSubMenu/iconsSmartApps/IconAudioteca.svg" />
           <Link href="/">
+          <a>
+          <img src="/icons/iconsSubMenu/iconsSmartApps/IconAudioteca.svg" />
               <div>
                 <div>
                   <h3>Audioteca</h3>
@@ -31,11 +34,13 @@ export const SmartApps = () => (
                 </div>
                 <p>repositório com ligações para reforçar seu pit</p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconGirodaSabedoria.svg" />
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconGirodaSabedoria.svg" />
               <div>
                 <div>
                   <h3>Giro da sabedoria</h3>
@@ -43,11 +48,14 @@ export const SmartApps = () => (
                 </div>
                 <p> produtividade, originação, upsell e atingimento.</p>
               </div>
+            </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconSpif.svg" />
+      
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconSpif.svg" />
               <div>
                 <div>
                   <h3>Campanha motivacional - SPIF</h3>
@@ -55,11 +63,14 @@ export const SmartApps = () => (
                 </div>
                 <p> acompanhar em tempo real sua pontuação no spif </p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconScorecard.svg" />
+     
       <Link href="#">
+      <a>
+      <img src="/icons/iconsSubMenu/iconsSmartApps/IconScorecard.svg" />
             <div>
                 <div>
                   <h3>Scorecard</h3>
@@ -67,11 +78,14 @@ export const SmartApps = () => (
                 </div>
                 <p> repositório com seus feedbacks de ligações </p>
             </div>
+            </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconGlossarioPendencias.svg" />
+     
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconGlossarioPendencias.svg" />
               <div>
                 <div>
                   <h3>Glossário de pendências</h3>
@@ -79,11 +93,14 @@ export const SmartApps = () => (
                 </div>
                 <p> dicas para evitar as pendências indesejadas  </p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconCalcAmortizacao.svg" />
+      
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconCalcAmortizacao.svg" />
               <div>
                 <div>
                   <h3>cálculo da amortização</h3>
@@ -91,11 +108,14 @@ export const SmartApps = () => (
                 </div>
                 <p> cálculo de amortização antecipada das parcelas  </p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconMatrizArgumetacaoes.svg" />
+   
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconMatrizArgumetacaoes.svg" />
               <div>
                 <div>
                   <h3>Matriz de Argumentações</h3>
@@ -103,11 +123,14 @@ export const SmartApps = () => (
                 </div>
                 <p>dicas para contorno de objeções</p>
               </div>
+              </a>
           </Link>
       </li>
       <li>
-      <img src="/icons/iconsSubMenu/iconsSmartApps/IconTopPerformance.svg" />
+     
         <Link href="#">
+        <a>
+        <img src="/icons/iconsSubMenu/iconsSmartApps/IconTopPerformance.svg" />
               <div>
                 <div>
                   <h3>Top Performance</h3>
@@ -115,6 +138,7 @@ export const SmartApps = () => (
                 </div>
                 <p>consultores que estão mandando super bem</p>
               </div>
+              </a>
           </Link>
       </li>
     </ul>

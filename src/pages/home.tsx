@@ -29,6 +29,14 @@ const Container = styled.div`
     justify-content: center;
 
     padding: 0 32px;
+
+    > div {
+      display: flex;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   .main-content {
     display: flex;
@@ -45,6 +53,7 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 0.5em;
+
       input {
         height: 50px;
         border-radius: 16px;
@@ -57,7 +66,7 @@ const Container = styled.div`
       }
       button,
       input {
-        width: 50%;
+        width: 100%;
       }
     }
   }
@@ -71,7 +80,7 @@ export default function Home() {
       </aside>
       <main className="main-content">
         <div>
-          <img src="/img/logoG.svg" alt="Logo" />
+          <img src="/img/LogoG.svg" alt="Logo" />
           <button>
             <img src="/img/logoGoogle.svg" alt="Crie sua conta" />
             Crie sua sua conta

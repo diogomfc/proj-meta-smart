@@ -9,7 +9,7 @@ const Container = styled.div`
   justify-content: center;
   text-align: center;
 
-  padding-bottom: 90px;
+  padding-bottom: 9rem;
 
   height: 100vw;
 
@@ -24,20 +24,20 @@ const Container = styled.div`
     h1 {
       color: #1f2d27;
       font-weight: bold;
-      font-size: 22px;
+      font-size: 2.2rem;
     }
   }
 
   > p {
     color: #1f2d27;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 1.5rem;
   }
 
   > span {
     color: #1f2d27;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 `;
 
