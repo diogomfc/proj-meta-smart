@@ -10,7 +10,7 @@ export const Metricas = () => (
   <MetricasContainer>
     <ul className="primary">
       <li>
-          <Link href="/Users/metricasHistoricoDia">
+          <Link href="/Metricas">
             <a>
             <img src="/icons/iconsSubMenu/iconsMetricas/IconHistoricoDiario.svg" />
              <div>

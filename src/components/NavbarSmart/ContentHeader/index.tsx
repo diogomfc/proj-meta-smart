@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import { Metricas, Relatorios, Estrategias, SmartApps } from "../Content";
 import { DropdownProvider, DropdownOption, DropdownRoot } from "../Dropdown";
@@ -59,6 +60,20 @@ function ContentHeader() {
               </h1>
               <span>Consultor financeiro auto I </span>
             </div>
+
+            <Link href="#">
+              <div className="Notification">
+                <img src="/img/imgSino.svg" alt="Notificação Atualização" />
+                <div>
+                  <span>8</span>
+                </div>
+              </div>
+            </Link>
+            <Link href="/login">
+              <div className="btmSair">
+                <h1>Sair</h1>
+              </div>
+            </Link>
           </Perfil>
         </Container>
         <DropdownRoot />

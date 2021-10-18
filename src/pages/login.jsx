@@ -1,7 +1,10 @@
 import Link from "next/link";
+import React from "react";
+
 import { Container } from "../styles/loginStyle";
 
 export default function Login() {
+
   return (
     <Container>
       <aside>
@@ -20,14 +23,14 @@ export default function Login() {
           </a>
         </Link>
         <div className="separator">
-          <div>--------</div>
+          <div></div>
           <div>ou entre com sua conta</div>
-          <div>--------</div>
+          <div></div>
         </div>
         <section>
-          <form action="#">
+          <form action="">
             <input type="text" placeholder="Usuário" />
-            <input type="text" placeholder="Senha" />
+            <input type="password" placeholder="Senha" />
             <Link href="/">
               <a className="btnCriar">
                 <img src="/img/log-in.svg" alt="Entrar no Meta Smart" />
@@ -35,6 +38,7 @@ export default function Login() {
               </a>
             </Link>
             <button type="submit">Recuperar senha</button>
+            <a href="#" ></a>
           </form>
         </section>
       </main>

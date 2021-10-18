@@ -10,7 +10,7 @@ export const SmartApps = () => (
   <SmartAppsContainer>
     <ul className="primary">
       <li>
-            <Link href="/contato">
+            <Link href="/BasedeConhecimento">
               <a>
               <img src="/icons/iconsSubMenu/iconsSmartApps/IconBasedeConhecimento.svg" />
              <div>

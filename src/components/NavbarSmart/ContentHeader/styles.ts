@@ -27,6 +27,7 @@ export const DropdownStyles = styled.div`
 
   .dropdown-arrow {
     position: relative;
+    //left: 13rem;
 
     //^
     &::before {
@@ -47,6 +48,7 @@ export const DropdownStyles = styled.div`
   }
 
   .dropdown-container {
+    //left: 15rem;
     position: absolute;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -69,6 +71,7 @@ width: 100%;
 
 display: flex;
 align-items: center;
+justify-content: center;
 
 `;
 
@@ -79,16 +82,16 @@ padding-left: 5rem;
 `;
 
 export const MenuDrop = styled.nav`
+
+position: relative;
+
+
  > ul {
     list-style-type: none;
     display: flex;
-  
-    position: relative;
     align-items: center;
-    justify-content: left;
-   
+    //justify-content: left;
     gap: 1rem;
-
   }
 
 `
@@ -98,16 +101,14 @@ export const Perfil = styled.div`
  display: flex;
  align-items: center;
  padding-right: 5rem;
+ gap: 1rem;
 
-
- >div{
-  padding: 0.25rem 0 0.25rem 1rem;
-
+  >div{
     >h1{
-    display: flex;
-    font-size:1.6rem;
-    font-weight: bold;
-    color: ${props => props.theme.colors.textoPrimary};
+      display: flex;
+      font-size:1.6rem;
+      font-weight: bold;
+      color: ${props => props.theme.colors.textoPrimary};
 
       >p{
       color: ${props => props.theme.colors.bluePrimary};
@@ -123,12 +124,70 @@ export const Perfil = styled.div`
     font-weight:lighter;
     color: ${props => props.theme.colors.textoPrimary};
     }
- }
+  }
 
->img{
-  //background-color: red;
-  height:6rem;
-  width: 6rem;
-}
+  >img{
+    height:6rem;
+    width: 6rem;
+  }
+
+  .Notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: ${props => props.theme.colors.secondary};
+    height: 4.4rem;
+    width: 4.4rem;
+    border-radius: 0.6rem;
+
+    cursor: pointer;
+
+    >img{
+     display: flex;
+     position: relative;
+     left: 0.8rem;
+    }
+
+    >div{
+     display: flex;
+     position: relative;
+     right: 0.4rem;
+     bottom: 0.8rem;
+     align-items: center;
+     justify-content: center;
+
+     background:#fff;
+     box-shadow: 0 0 1em #44D600;
+     height:1.5rem;
+     width:1.5rem;
+     border-radius: 50%;
+     line-height: 0;
+     >span{
+       color:#44D600;
+     }
+    }
+
+  }
+
+  
+  .btmSair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: ${props => props.theme.colors.secondary};
+    height: 4.4rem;
+    width: 4.4rem;
+    border-radius: 0.6rem;
+
+    cursor: pointer;
+    >h1{
+      color: ${props => props.theme.colors.textoSecondary};
+      font-weight: normal;
+    }
+  }
+
+
 
 `

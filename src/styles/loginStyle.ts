@@ -90,11 +90,27 @@ main{
 
   .separator{
     display:flex;
-    padding: 0.5rem;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    
+    width: 37rem;
+
+  }
+
+  .separator div:nth-child(2){
+    padding:0 0.3rem;
     font-size: 1.4rem;
     color: #A8A8B3;
-    gap: 1rem;
-    padding-bottom:1.5rem;
+    line-height: 0;
+  }
+
+  .separator div:nth-child(1), 
+  .separator div:nth-child(3){
+    background:#EDF0EF;
+    width: 25%;
+    height: 0.1rem;
   }
 
 `

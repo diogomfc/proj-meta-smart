@@ -8,6 +8,7 @@ declare module 'styled-components' {
             primary: string;
             secondary: string;
             textoPrimary: string;
+            textoSecondary: string;
             gray: string;
 
            //cards
