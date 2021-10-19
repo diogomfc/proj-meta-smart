@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   html{ 
     min-height: 100%;
     background-image: linear-gradient(${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
-    font-size: 62.5% // 10px
+    font-size: 62.5%; // 10px
   }
   *, button, input {
     border: 0;
@@ -38,13 +38,13 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (max-width: 1080px){
       html{
-          font-size: 93.75% // 15px
+          //font-size: 63.75% // 15px
       }
   }
 
   @media (max-width: 720px){
     html{
-        font-size: 87.5% // 14px
+        //font-size: 87.5% // 14px
     }
   }
 

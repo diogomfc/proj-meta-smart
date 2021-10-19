@@ -16,7 +16,7 @@ export default function Login() {
         <header>
           <img src="/img/LogoG.svg" alt="Logo" />
         </header>
-        <Link href="/Users/metricasMes">
+        <Link href="/home">
           <a className="btnLogin">
             <img src="/img/logoGoogle.svg" alt="Crie sua Conta" />
             Crie sua conta
@@ -31,7 +31,7 @@ export default function Login() {
           <form action="">
             <input type="text" placeholder="Usuário" />
             <input type="password" placeholder="Senha" />
-            <Link href="/">
+            <Link href="/home">
               <a className="btnCriar">
                 <img src="/img/log-in.svg" alt="Entrar no Meta Smart" />
                 Entrar no meta smart
