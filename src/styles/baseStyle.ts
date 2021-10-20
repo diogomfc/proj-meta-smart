@@ -64,20 +64,24 @@ export const FiltroPesquisa = styled.div`
     align-items:center;
     gap: 0.5rem;
   
-    .formFiltro{
+   .input-filtro{
       height: 5rem;
       width: 20.8rem;
       background: #EDF0EF;
       border-radius: 1.6rem;
       padding: 1rem;
+
+      outline: none;
     }
     
-    .formPesquisa{
+    .input-pesquisa{
       height: 5rem;
       width: 78rem;
       background: #EDF0EF;
       border-radius: 1.6rem;
       padding: 1rem;
+
+      outline: none;
     }
 
     .btnAdcionar{

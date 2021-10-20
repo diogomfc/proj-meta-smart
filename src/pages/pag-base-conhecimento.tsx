@@ -25,15 +25,15 @@ export default function BasedeConhecimento() {
             />
           </Header>
           <FiltroPesquisa>
-            <section>
+            <section id="inputs-pesquisa">
               <form action="">
                 <input
-                  className="formFiltro"
+                  className="input-filtro"
                   type="text"
                   placeholder="Filtrar por categoria"
                 />
                 <input
-                  className="formPesquisa"
+                  className="input-pesquisa"
                   type="text"
                   placeholder="Pesquisar por palavra chave. Ex: Cadência"
                 />

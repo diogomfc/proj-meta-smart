@@ -84,6 +84,14 @@ export const DropdownStyles = styled.div`
       right: 53rem;
     }
   }
+@media (max-width: 1750px){
+    .dropdown-arrow {
+      right: 42rem;
+    }
+    .dropdown-container {
+      right: 42rem;
+    }
+  }
 @media (max-width: 1680px){
     .dropdown-arrow {
       right: 40rem;
