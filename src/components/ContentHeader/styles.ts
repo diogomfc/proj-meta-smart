@@ -1,4 +1,18 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
+
+const animate = keyframes`
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+`;
 
 interface IColors{
   lineColor: string;
@@ -21,6 +35,7 @@ gap: 0.5rem;
             content: '';
             display: block;
             border-bottom: 0.3rem solid ${props => props.lineColor};
+            animation: ${animate} 1s;
         }
 }
 > h3{

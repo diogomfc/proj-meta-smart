@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Layouts from "../components/Layouts";
 import ContentHeader from "../components/ContentHeader";
+import CardsMetricas from "../components/BoxCards/CardsMetricas/Cards";
 
 import { Container, Header, Main } from "../styles/metricasStyle";
 
@@ -19,7 +20,8 @@ export default function Metricas() {
           </Header>
 
           <Main>
-            <img src="/img/ImgAlertaResult.svg" />
+            <CardsMetricas />
+            {/* <img src="/img/ImgAlertaResult.svg" />
             <p>Nenhuma resultado por aqui...</p>
             <span>
               Criamos um ambiente dedicado para que você possa evoluir de forma
@@ -34,7 +36,7 @@ export default function Metricas() {
 
             <span>
               Lembre-se de compartilhar seu conhecimento, contamos com você.
-            </span>
+            </span> */}
           </Main>
         </Container>
       </Layouts>

@@ -21,13 +21,14 @@ export const DropdownStyles = styled.div`
     }
 
     .dropdown-root {
-      z-index: 1000;
-      position: relative;
+     z-index: 1000;
+     position: relative;
     
     }
 
     .dropdown-arrow {
       position: relative;
+   
     
       //^
       &::before {
@@ -48,6 +49,7 @@ export const DropdownStyles = styled.div`
     }
 
     .dropdown-container {
+     
       position: absolute;
       overflow: hidden;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -65,7 +67,7 @@ export const DropdownStyles = styled.div`
       right: 71rem;
     }
     .dropdown-container {
-      right: 71rem;
+      right:  71rem;
     }
   } 
 @media (max-width: 2560px){

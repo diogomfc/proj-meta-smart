@@ -1,8 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
 interface ITagProps {
-    statusColor: string;
-  }
+  color: string;
+}
+
 
 const animate = keyframes`
     0% {
@@ -22,7 +23,7 @@ export const Container = styled.div`
 width: 100%;
 `;
 
-export const ContentListagemClientes = styled.div`
+export const ContentListagemClientes = styled.div<ITagProps>`
 // CT = Categoria
 // RV = Revisão
 // DT = Data
@@ -31,7 +32,7 @@ export const ContentListagemClientes = styled.div`
 // AC = Ações
 
   display: grid;
-  grid-template-columns: 14rem 8.8rem 8.8rem 14rem 1fr 25rem;
+  grid-template-columns: 14rem 8.8rem 8.8rem 18rem 1fr 25rem;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -50,7 +51,6 @@ export const ContentListagemClientes = styled.div`
     &:hover {
         opacity: .9;
         transform: translateX(5px);
-        cursor: pointer;
     }
 
     .Categoria { 
@@ -58,9 +58,17 @@ export const ContentListagemClientes = styled.div`
       display:flex;
       align-items: center;
       text-align: center;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 5px;
       
+      .Tag{
+      width: 8px;
+      height: 100%;
+
+      background-color: ${props => props.color};
+      margin-right: 5px;
+      }
+
       >img{
         width: 28px;
         height:28px;
@@ -68,7 +76,7 @@ export const ContentListagemClientes = styled.div`
       }
       >h2{
         color: ${props => props.theme.colors.textoPrimary};
-        font-size: 16px;
+        font-size: 1.5rem;
         font-weight: 300; 
         }
  
@@ -88,7 +96,7 @@ export const ContentListagemClientes = styled.div`
 
       >h2{
         color: ${props => props.theme.colors.textoPrimary};
-        font-size: 16px;
+        font-size: 1.5rem;
         font-weight: 300; 
         }
     }
@@ -106,7 +114,7 @@ export const ContentListagemClientes = styled.div`
       
       >h2{
         color: ${props => props.theme.colors.textoPrimary};
-        font-size: 16px;
+        font-size: 1.5rem;
         font-weight: 300; 
         }
         
@@ -124,7 +132,7 @@ export const ContentListagemClientes = styled.div`
 
       >h2{
         color: ${props => props.theme.colors.textoPrimary};
-        font-size: 16px;
+        font-size: 1.5rem;
         font-weight: 300; 
         }
 
@@ -132,21 +140,25 @@ export const ContentListagemClientes = styled.div`
     
     .Title { 
       grid-area: TT; 
-
         display:flex;
         align-items: center;
         text-align: center;
-        padding: .5rem;
-        padding-left: 3rem;
+        height: 100%;
+        gap: .5rem;
+        
 
         >h2{
           color: ${props => props.theme.colors.blueSecondary};
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           font-weight:normal; 
+
+          
         }
 
-        >img{
-          padding: .5rem;
+        >img :nth-child(1){
+          width: 20px;
+          height:20px;
+          cursor: pointer;
         }
 
     }

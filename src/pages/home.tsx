@@ -8,6 +8,8 @@ import ConexaoDb from "../utils/conexaoDB";
 import { GetStaticProps } from "next";
 import Swal from "sweetalert2";
 
+import Inputs from "../components/Inputs";
+
 interface IdbMetricasTitle {
   title: string;
 }

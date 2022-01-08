@@ -35,6 +35,11 @@ main{
   align-items:center;
   flex-direction: column;
 
+  header img{
+      height:7.8rem;
+      width:19rem;
+  }
+
   form{
     display: flex;
     justify-content:center;
@@ -60,14 +65,23 @@ main{
     width: 39rem;
     border-radius: 1.6rem;
     margin: 2rem;
+    background-color: #49E295;
+    //color: #FFF;
     border: 0.1rem solid rgba(168,168,179,0.5);
     font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
-    color:#1F2D27;
+    //color:#1F2D27;
+
+    transition: filter 0.2s;
+
     >img{
       padding: 1rem;
     };
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 
   .btnCriar{
@@ -78,7 +92,7 @@ main{
     width: 39rem;
     border-radius: 1.6rem;
     margin: 2rem;
-    background-color: #49E295;
+    background-color: #c7e3d7;
     font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;

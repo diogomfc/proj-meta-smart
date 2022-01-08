@@ -1,4 +1,7 @@
 import { Router } from "next/dist/client/router";
+//Conexao com db de testes do firebase
+//import "../services/firebase";
+import { AuthContextProvider } from "../contexts/AuthContext";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/globalsStyle";
@@ -30,10 +33,12 @@ Router.events.on("routeChangeError", () => {
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <ThemeProvider theme={light}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <AuthContextProvider>
+        <ThemeProvider theme={light}>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </AuthContextProvider>
       <style global jsx>
         {`
           #nprogress {

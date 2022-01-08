@@ -31,10 +31,13 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favIcon.svg" />
+          <script src="/scripts/main.js" defer type="module"></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          {/* Modal pagina testes */}
+          <div id="modal-root"></div>
         </body>
       </Html>
     );
