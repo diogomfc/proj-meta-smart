@@ -30,6 +30,13 @@ export default function CHeader() {
     console.log("Logout");
   }
 
+  var data = new Date();
+  var dia = String(data.getDate()).padStart(2, "0");
+  var mes = String(data.getMonth() + 1).padStart(2, "0");
+  var ano = data.getFullYear();
+
+  const dataAtual = dia + "/" + mes + "/" + ano;
+
   return (
     <ContainerHeader>
       <Container>
@@ -45,7 +52,7 @@ export default function CHeader() {
           <img src={user?.avatar} alt="" />
           <div>
             <h1>{user?.name}</h1>
-            <span>Consultor financeiro auto I </span>
+            <span>Você está online - {dataAtual}</span>
             <p>Admin</p>
           </div>
 

@@ -54,38 +54,6 @@ type ICadastroLinks = {
   // userNameLikes: void;
 };
 
-//Tipagem para os liks do firebase
-type FirebaseCadastroLinks = Record<
-  string,
-  {
-    userId: string;
-    userName: string;
-    title: string;
-    link: string;
-    linkCategoria: string;
-    linkVersionamento: string;
-    linkData: string;
-    linkRvisadoPor: string;
-    linkStatus: string;
-    linkIcons: string;
-    likesLinkCount: number;
-    likesLink: Record<
-      string,
-      {
-        userIdLikes: string;
-        userNameLikes: string;
-      }
-    >;
-  }
->;
-
-//Tipagem para os liks do firebase
-type FirebaseCadastroLikes = {
-  id: string;
-  userIdLikes: string;
-  userNameLikes: string;
-};
-
 //Tipagem para os commits
 type IFbCommitsLinks = {
   id: string;
@@ -106,29 +74,9 @@ type IFbCommitsLinks = {
   >;
 };
 
-type IFbCommits = Record<
-  string,
-  {
-    author: {
-      name: string;
-      avatar: string;
-    };
-    content: string;
-    commitDestacado: boolean;
-    commitResposta: boolean;
-    likes: Record<
-      string,
-      {
-        authorId: string;
-      }
-    >;
-  }
->;
-
 function BasedeConhecimento() {
   //UseState que guarda os valores dos cadastros links
   const [chaveId, setChave] = useState("");
-  const [chaveSId, setChaveSId] = useState("");
   const [linkLink, setlinkLink] = useState("");
   const [linkTitulo, setlinkTitulo] = useState("");
   const [linkCategoria, setCategoria] = useState("");
@@ -137,29 +85,17 @@ function BasedeConhecimento() {
   const [linkRvisadoPor, setlinkRvisadoPor] = useState("");
   const [linkStatus, setlinkStatus] = useState("");
   const [linkIcons, setlinkIcons] = useState("");
-  const [likeCount, setLikeCount] = useState("");
 
   //UseState que guarda os valores dos cadastros de commits
-  const [commitId, setcommitId] = useState("");
-  const [commitContent, setCommitContent] = useState("");
-  const [commitDestacado, setCommitDestacado] = useState(false);
-  const [commitResposta, setCommitResposta] = useState(false);
-  const [commitAuthorNome, setCommitAuthorNome] = useState("");
-  const [commiAuthorAvatar, setCommiAuthorAvatar] = useState("");
   const [linkCommit, setlinkCommit] = useState("");
   const [qtdCommit, setqtdCommit] = useState<Number>();
-  const [qtdLikes, setQtdLikes] = useState<Number>();
-  const [qtdViews, setQtdViews] = useState("");
-  const [count, setCount] = useState("");
 
   //useState para mudar botão cadastro / atualizar
   const [updateButton, setUpdateButton] = useState(false);
 
   //função do firebase autenticação e fireSotre
   const { user } = useAuth();
-  const IDd = "-MoU9yG9c8qkdozaAO_D";
   const linkRef = database.ref("dblinks/");
-  const likesRef = database.ref(`dblinks/${chaveId}/likes`);
 
   const commitsRef = database.ref(`dblinks/${chaveId}/commits`);
 
@@ -172,10 +108,6 @@ function BasedeConhecimento() {
   const [dbCadastroCommits, setDbCadastroCommits] = useState<IFbCommitsLinks[]>(
     []
   );
-  const [dbGeral, setdbGeral] = useState<IFbCommitsLinks[]>([]);
-
-  // Cadastro de Likes
-  const [dbLikes, setDbLikes] = useState<FirebaseCadastroLikes[]>([]);
 
   //UseEffects de atualização dos dados pós carregamento
   //UseEffects do commit
@@ -199,15 +131,12 @@ function BasedeConhecimento() {
 
       setDbCadastroCommits(resultCadastroCommits);
       setqtdCommit(resultCadastroCommits.length);
-
-      //console.log(`Log Cadastro useEffect Commits - ${resultCadastroCommits}`);
     });
     return () => {
       commitsRef.off("value");
     };
   }, [chaveId, user?.id]);
 
-  //const testes = database.ref(`dblinks/${chaveId}/commits/${commitId}/likes`);
   //UseEffects do links
   useEffect(() => {
     linkRef.on("value", (result) => {
@@ -230,8 +159,6 @@ function BasedeConhecimento() {
         };
       });
       setDbCadastroLinks(resultCadastroLinks);
-
-      //console.log(`Log Cadastro useEffect links- ${testes}`);
     });
     return () => {
       linkRef.off("value");
@@ -503,11 +430,6 @@ function BasedeConhecimento() {
     console.log(linkTitulo);
   }
 
-  function qtdLikesViews(dbCadastroLinks: ICadastroLinks) {
-    setChave(dbCadastroLinks.chaveId); //pega o id para atualizar
-    console.log(dbCadastroLinks);
-  }
-
   // Create document function
   const incrementLikes = async (chaveId: string) => {
     const likesRef = database.ref(`dblinks/${chaveId}/likeCount`);
@@ -552,7 +474,7 @@ function BasedeConhecimento() {
                   onChange={buscar}
                 />
 
-                {user?.name === "Diogo Silva" ? (
+                {user?.name !== " " ? (
                   <button
                     className="btn-adicionar"
                     type="button"

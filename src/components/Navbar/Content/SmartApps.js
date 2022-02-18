@@ -148,7 +148,7 @@ export const SmartApps = () => (
           <div>
             <VscFeedback color="#202225" title="Feedback" size={25} />
           </div>
-          <p>Ajuda o metaSmart fica cada vez melhor. Envie seu feedback e sugestões para diogo.silva@creditas.com</p> 
+          <p>Ajuda o metaSmart fica cada vez melhor. Envie seu feedback e sugestões para diogomfc@hotmail.com</p> 
         </div>
       </li>
     </ul>
