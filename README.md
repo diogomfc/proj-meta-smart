@@ -1,84 +1,136 @@
-# Example app with styled-components
+<!-- Logotipo -->
+<div align="center">
+  <img src="docs/assets/Capa.png">
+</div>
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<!-- Subtitle -->
+<h2 align="center"> Meta Smart v 01</h2>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+<!-- Badges -->
+<p align="center">
+ <a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/diogomfc/proj-meta-smart?color=%2304D361?style=flat-square">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/diogomfc/proj-meta-smart?style=flat-square">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/diogomfc/money?style=flat-square">
+  </a>
+</p>
+
+<!-- Sobre o Projeto -->
+
+## 🚀 Sobre o Meta Smart
+
+Centralize todos os processos, procedimentos e ferramentas em um só lugar com o Meta Smart as equipes tomam decisões mais rápidas, ficando sincronizadas trazendo mais resultado com mais transparência.
+
+Meta Smart é uma plataforma onde auxilia uma equipe que depende de metas e resultados ter uma visão geral de todo o fluxo e processo da empresa.
+Com ferramentas personalizadas que se adequa a qualquer equipe de vendas,
+trazendo mais transparecia e clareza em todo o ciclo da venda.
+
+## Projeto
+
+<div align="center">
+  <img src="docs/assets/Login-MetaSmart.gif">
+</div>
+
+## Métricas
+
+Ferramentas como dashboards com visão detalhada das métricas mensais, semanais, diárias e com gráficos dinâmicos com informações gerais do resultado individual ou por equipe. Controle de clientes com status personalizados para gerenciar todo o clico de venda.
+
+Relatórios de produtividade mensal, semanal e diários possibilitando criar estratégias pontuais individuais ou para equipe.
+
+<div align="center">
+  <img src="docs/assets/HistoricoMensal.png">
+  <img src="docs/assets/GraficoOriginacao.png">
+  <img src="docs/assets/GraficoProdutividade.png">
+  <img src="docs/assets/GraficoUpsell.png">
+  <img src="docs/assets/CalenderSemanal.png">
+  <img src="docs/assets/CalenderDiario.png">
+</div>
+
+## Smart App - Base de Conhecimento
+
+Smart Apps uma central de ferramentas personalizada onde proporcionam um espaço ideal para sua equipe criar, coletar e colaborar em qualquer projeto ou ideia, centralizando em um único local todas as informações necessárias para realizar o melhor trabalho.
+
+A ideia e que cada APP possa ajudar sua equipe a estruturar, organizar e compartilhar o trabalho, para que cada membro da equipe possa ver o conhecimento institucional e acessar as informações necessárias para realizar um melhor trabalho.
+
+Conta com um repositório de links de processo e procedimentos com controle de versionamento e central de comentários onde a interação dos colaboradores passo pontuar falhas no processo para que assim seja corrigido trazendo mais agilidade na atualização dos processos e procedimento dessa forma o processo sempre vai estar mais atualizado evitando transtorno com informações desatualizadas.
+
+<div align="center">
+  <img src="docs/assets/Login-Cadastro-link.gif">
+  <img src="docs/assets/Login-Cadastro-editar-link.gif">
+  <img src="docs/assets/Login-Cadastro-perguntas-link.gif">
+</div>
+
+## Components
+
+<div align="center">
+  <img src="docs/assets/Modals.png">
+</div>
+
+## ⚙️ Funcionalidades
+
+- Login:
+
+  - [x] Conta do google
+  - [ ] Criar conta sem vínculo
+  - [ ] Recuperar Senha
+
+- Métricas:
+
+  - [ ] Histórico diário
+  - [ ] Histórico mensal
+  - [ ] Histórico detalhado
+
+- Relatórios:
+
+  - [ ] produtividade diário
+  - [ ] produtividade mensal
+  - [ ] produtividade detalhado
+
+- Estratégia:
+
+  - [ ] personalizar estratégias para metas
+
+- Smart Apps:
+  - [x] Base de conhecimento
+  - [ ] Audioteca
+  - [ ] Videoteca
+  - [ ] Scorecard feedbacks
+  - [ ] Top Performance
+
+## 🧰 Tecnologias e Bibliotecas
+
+- [Nextjs](https://nextjs.org/)
+  - [Styled Component](https://www.npmjs.com/package/styled-components) - Biblioteca CSS in JS
+  - [firebase](https://firebase.google.com)
+  - [TypeScript](https://www.typescriptlang.org/)
+
+## ⚙️ Rodando o Projeto
+
+```bash
+# Clone este repositório para a pasta anterior
+$ git clone https://github.com/diogomfc/proj-meta-smart.git
+# ou use a opção de download.
+
+# Acesse a pasta proj-meta-smart
+$ cd proj-meta-smart
+
+# Instale as dependências
+$ yarn install
+ou
+$ npm install
+
+# Executando o Projeto
+$ yarn dev
+ou
+$ npm dev
+
+# Acesse http://localhost:3000 no seu navagador
+```
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+https://metasmart-dev.vercel.app
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+<div align="center">
+  <small>Diogo Silva - 2021</small>
+</div>
